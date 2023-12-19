@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@500&display=swap');
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat; 
+    background: linear-gradient(to bottom, #cedbe9 0%, #aac5de 17%, #6199c7 50%, #3a84c3 51%, #419ad6 59%, #4bb8f0 71%, #3a8bc2 84%, #26558b 100%);
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2%;
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-family: 'Play', sans-serif;
+    text-align: center;
+    font-size: 24px;
+}
+label{
+    font-family: 'Play', sans-serif;  
+    font-size: 18px;
+}
+.out-container{
+    font-family: 'Play', sans-serif;
+    color: #fe0000;
+    background: linear-gradient(135deg, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
+    border: 3px solid #000000;
+    padding: 4%;
+
+}
+input, button {
+    font-family: 'Commissioner', sans-serif;
+    font-size: 17px;
+}
+.timer-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(160deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 52%,#e0eff9 100%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(185, 185, 185, 0.75)set -3px -2px 19px 1px rgb(212, 212, 212);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 4%;
+}
+
+div {
+    margin: 1%;
+}
+
+.alarm-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+
+#output-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+
+#Date-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+
+#updated-date-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+
+.user-time-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(160deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 52%,#e0eff9 100%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(185, 185, 185, 0.75)set -3px -2px 19px 1px rgb(212, 212, 212);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 4%;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1%;
+    justify-content: center;
+}
+
+.buttons button {
+    padding: 1%;
+    margin: 1%;
+    transition: background-color 0.3s ease-in-out;
+    background: linear-gradient(135deg, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%);
+    border: 3px solid #ffffff;
+   
+}
+
+.buttons button:hover {
+    color: #FFF;
+    transition: 0.4s;
+    background: linear-gradient(135deg, #aebcbf 0%,#6e7774 50%,#0a0e0a 51%,#0a0809 100%);
+    border: 3px solid #000000;
+}
+#timeoutputcontainer{
+    text-align: center;
+    margin-top: 2%;
+    background: linear-gradient(160deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 52%,#e0eff9 100%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(185, 185, 185, 0.75)set -3px -2px 19px 1px rgb(212, 212, 212);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 4%;
+}
+#currentdatecontainer{
+    text-align: center;
+    margin-top: 2%;
+    background: linear-gradient(160deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 52%,#e0eff9 100%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(185, 185, 185, 0.75)set -3px -2px 19px 1px rgb(212, 212, 212);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 4%;
+}
+#currentimecotainer{
+    text-align: center;
+    margin-top: 2%;
+    background: linear-gradient(160deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 52%,#e0eff9 100%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(185, 185, 185, 0.75)set -3px -2px 19px 1px rgb(212, 212, 212);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 4%;
+}
+.alarm-container {
+    text-align: center;
+    margin-top: 2%;
+    background: linear-gradient(160deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 52%,#e0eff9 100%);
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px;
+    -webkit-box-shadow: 4px 4px 5px 0px rgba(185, 185, 185, 0.75)set -3px -2px 19px 1px rgb(212, 212, 212);
+    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75), inset -3px -2px 19px 1px rgba(84, 83, 84, 1);
+    padding: 4%;
+}
+
+#alarm-time-input {
+    transition: border-color 0.3s ease-in-out;
+   
+}
+
+#alarm-time-input:focus {
+    border-color: #3498db;
+}
+
+#alarm-message-container {
+    margin-top: 1%;
+    animation: slideIn 1s ease-in-out;
+  
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+#output-container {
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+   
+}
+
+@media only screen and (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .alarm-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .user-time-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .timer-container {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #timeoutputcontainer{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #currentdatecontainer{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    #currentimecotainer{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}
+:focus{outline: none;}
+
+.col-3{ position: relative;}
+
+
+.effect-8
+{border: 2px solid #000000; padding: 7px 14px 9px; transition: 0.4s;}
+.effect-8 ~ .focus-border:before,
+.effect-8 ~ .focus-border:after{content: ""; position: absolute; top: 0; left: 0; width: 0; height: 2px; background: linear-gradient(135deg, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); transition: 0.3s;}
+.effect-8 ~ .focus-border:after{top: auto; bottom: 0; left: auto; right: 0;}
+.effect-8 ~ .focus-border i:before,
+.effect-8 ~ .focus-border i:after{content: ""; position: absolute; top: 0; left: 0; width: 2px; height: 0; background: linear-gradient(135deg, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); transition: 0.4s;}
+.effect-8 ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-8:focus ~ .focus-border:before,
+.effect-8:focus ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-8:focus ~ .focus-border i:before,
+.effect-8:focus ~ .focus-border i:after{height: 100%; transition: 0.4s;}

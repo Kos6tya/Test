@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Time.css">
+    <title>Сайт для демонстрації роботи стрілочних функцій</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="timeoutputcontainer">
+            <h1>Виведення часу</h1>
+            <div class="out-container" id="output-container"></div>
+            <div class="buttons">
+                <button id="toggle-display-button">Змінити виведення часу</button>
+            </div>
+        </div>
+
+        <div id="currentdatecontainer">
+            <h1>Сьогоднішня дата</h1>
+            <div id="Date-container" class="out-container"></div>
+            <div class="buttons">
+                <button id="view-date-button">Вивести Сьогоднішню дату</button>
+            </div>
+        </div>
+
+        <div  id="currentimecotainer">
+            <h1>Поточний час</h1>
+            <div class="out-container" id="updated-date-container"></div>
+        </div>
+
+        <div class="user-time-container">
+            <h1>Користувацький час</h1>
+            <label for="user-hours-input">Користувацькі часи:</label>
+            <div class="col-3">
+                <input class="effect-8" type="number" id="user-hours-input" min="0" placeholder="Введіть часи">
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <label for="user-minutes-input">Користувацькі хвилини:</label>
+            <div class="col-3">
+                <input class="effect-8" type="number" id="user-minutes-input" min="0" placeholder="Введіть хвилини">
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <label for="user-seconds-input">Користувацькі секунди:</label>
+            <div class="col-3">
+                <input class="effect-8" type="number" id="user-seconds-input" min="0" placeholder="Введіть секунди">
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <div class="buttons">
+                <button id="set-user-time-button">Установити користувацький час</button>
+            </div>
+            <div class="out-container" id="user-time-output-container"></div>
+        </div>
+
+        <div class="alarm-container">
+            <h1>Будильник</h1>
+            <label for="alarm-time">Установити час будильника:</label>
+            <div class="col-3">
+                <input class="effect-8" type="time" id="alarm-time-input" required>
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <div class="buttons">
+                <button  id="set-alarm-button">Установити будильник</button>
+            </div>
+            <div class="out-container" id="alarm-output-container"></div> 
+            <div id="alarm-message-container"></div>
+        </div>
+
+        <div class="timer-container">
+            <h1>Відлік</h1>
+            <label for="timer-hours-input">Часи:</label>
+            <div class="col-3">
+                <input class="effect-8" type="number" id="timer-hours-input" min="0" placeholder="Введіть часи">
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <label for="timer-minutes-input">Хвилини:</label>
+            <div class="col-3">
+                <input class="effect-8" type="number" id="timer-minutes-input" min="0" placeholder="Введіть хвилини">
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <label for="timer-seconds-input">Секунди:</label>
+            <div class="col-3">
+                <input class="effect-8" type="number" id="timer-seconds-input" min="0" placeholder="Введіть секунди">
+                <span class="focus-border">
+                    <i></i>
+            </div>
+            <div class="buttons">
+                <button id="start-timer-button">Почати відлік</button>
+            </div>
+
+            <div class="out-container" id="timer-output-container"></div>
+            
+         
+       
+        </div>
+    </div>
+    </div>
+    <script src="Display.js"></script>
+</body>
+
+</html>
